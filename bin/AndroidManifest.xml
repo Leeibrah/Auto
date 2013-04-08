@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+
+    <application
+        android:icon="@drawable/car_icon"
+        android:label="@string/app_name" >
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AutoMain"></activity>
+        <activity android:name="com.mobi.About"></activity>
+        <activity android:name="com.mobi.CarResults"></activity>
+        <activity android:name="com.mobi.Dealers"></activity>
+        <activity android:name="com.mobi.Hire"></activity>
+        <activity android:name="com.mobi.Search"></activity>
+        <activity android:name="com.mobi.Sell"></activity>
+        <activity android:name="com.mobi.Tips"></activity>
+        <activity android:name="com.mobi.Upload"></activity>
+        <activity android:name="com.mobi.TakePhoto"></activity>
+        
+        <activity android:name="com.tab.CompanyTab"></activity>
+        <activity android:name="com.tab.RentTab"></activity>
+        
+        <activity android:name="com.dealers.KisumuDealers"></activity>
+        <activity android:name="com.dealers.MachakosDealers"></activity>
+        <activity android:name="com.dealers.MalindiDealers"></activity>
+        <activity android:name="com.dealers.MeruDealers"></activity>
+        <activity android:name="com.dealers.MombasaDealers"></activity>
+        <activity android:name="com.dealers.NairobiDealers"></activity>
+        <activity android:name="com.dealers.NaivashaDealers"></activity>
+        <activity android:name="com.dealers.NakuruDealers"></activity>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
